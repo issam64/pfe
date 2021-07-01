@@ -1,0 +1,14 @@
+pour phpMYadmin :
+CREATE DATABASE pfe;
+CREATE TABLE `users` (
+  `userId` int(11) NOT NULL,
+  `userName` varchar(128) NOT NULL,
+  `userEmail` varchar(128) NOT NULL,
+  `userUid` varchar(128) NOT NULL,
+  `userPwd` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`userId`);
+ ALTER TABLE `users`
+  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+COMMIT; 
